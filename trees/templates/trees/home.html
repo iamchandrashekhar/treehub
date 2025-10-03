@@ -1,0 +1,49 @@
+{% extends 'trees/base.html' %}
+
+{% block title %}{{ title }} - TreeHub{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>🌳 Welcome to TreeHub</h1>
+    <p>Your ultimate destination for learning about trees, forests, and nature's green guardians.
+        Discover the beauty and importance of trees in our ecosystem.</p>
+</div>
+
+<section class="featured-section">
+    <div class="page-header">
+        <h2>Featured Trees</h2>
+        <p>Explore some of nature's most magnificent specimens</p>
+    </div>
+
+    <div class="card-grid">
+        {% for tree in featured_trees %}
+        <div class="card">
+            <h3>🌿 {{ tree.name }}</h3>
+            <p>{{ tree.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="info-section">
+    <div class="card-grid">
+        <div class="card">
+            <h3>🌱 Learn About Trees</h3>
+            <p>Discover different types of trees, from majestic oaks to towering pines.
+                Each species has unique characteristics and plays a vital role in our ecosystem.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌍 Forest Conservation</h3>
+            <p>Understanding the importance of forests helps us appreciate and protect these
+                vital ecosystems that support biodiversity and climate regulation.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌿 Tree Care Tips</h3>
+            <p>Learn how to properly care for trees in your garden or community.
+                Proper care ensures healthy growth and longevity for these natural treasures.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

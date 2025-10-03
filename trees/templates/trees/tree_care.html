@@ -1,0 +1,86 @@
+{% extends 'trees/base.html' %}
+
+{% block title %}{{ title }} - TreeHub{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Tree Care Guide</h1>
+    <p>Learn how to properly care for trees to ensure their health and longevity</p>
+</div>
+
+<section class="care-tips-section">
+    {% for tip in care_tips %}
+    <div class="care-tip">
+        <h4>{{ tip.title }}</h4>
+        <p>{{ tip.tip }}</p>
+    </div>
+    {% endfor %}
+</section>
+
+<section class="seasonal-care">
+    <div class="page-header">
+        <h2>Seasonal Tree Care</h2>
+    </div>
+
+    <div class="card-grid">
+        <div class="card">
+            <h3>🌸 Spring Care</h3>
+            <p>Spring is the perfect time for planting new trees, applying fertilizer if needed,
+                and inspecting for winter damage. Remove any dead or damaged branches and
+                prepare your trees for the growing season.</p>
+        </div>
+
+        <div class="card">
+            <h3>☀️ Summer Care</h3>
+            <p>Focus on proper watering during hot, dry periods. Deep, infrequent watering
+                is best. Monitor for pests and diseases, and avoid pruning most tree species
+                during active growth periods.</p>
+        </div>
+
+        <div class="card">
+            <h3>🍂 Fall Care</h3>
+            <p>Fall is ideal for planting in many regions and for major pruning of deciduous trees.
+                Rake and compost fallen leaves, and consider applying mulch before winter arrives.</p>
+        </div>
+
+        <div class="card">
+            <h3>❄️ Winter Care</h3>
+            <p>Protect young trees from harsh winter conditions with tree wraps or guards.
+                Avoid walking on frozen ground around trees, and gently brush heavy snow
+                from branches to prevent breakage.</p>
+        </div>
+    </div>
+</section>
+
+<section class="planting-guide">
+    <div class="page-header">
+        <h2>Tree Planting Guidelines</h2>
+    </div>
+
+    <div class="card-grid">
+        <div class="card">
+            <h3>📍 Location Selection</h3>
+            <p>Choose a location with appropriate sunlight, soil conditions, and space for
+                the tree's mature size. Consider proximity to buildings, power lines, and other trees.</p>
+        </div>
+
+        <div class="card">
+            <h3>🕳️ Proper Planting</h3>
+            <p>Dig a hole twice as wide as the root ball but no deeper. The top of the root
+                ball should be level with or slightly above the surrounding soil surface.</p>
+        </div>
+
+        <div class="card">
+            <h3>💧 Initial Watering</h3>
+            <p>Water thoroughly after planting and maintain consistent moisture for the first
+                year. Newly planted trees need regular watering to establish strong root systems.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌱 Early Care</h3>
+            <p>Stake only if necessary and remove stakes after one year. Apply mulch around
+                the base and monitor for signs of stress during the establishment period.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'trees/base.html' %}
+
+{% block title %}{{ title }} - TreeHub{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Forest Facts</h1>
+    <p>Discover amazing facts about forests and trees that will inspire you</p>
+</div>
+
+<section class="facts-section">
+    <div class="facts-grid">
+        {% for fact in facts %}
+        <div class="fact-item">
+            {{ fact }}
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="forest-importance">
+    <div class="page-header">
+        <h2>Why Forests Are Vital</h2>
+    </div>
+
+    <div class="card-grid">
+        <div class="card">
+            <h3>🌬️ Air Purification</h3>
+            <p>Forests act as the Earth's lungs, absorbing carbon dioxide and releasing oxygen.
+                They also filter pollutants from the air, improving air quality for all living beings.</p>
+        </div>
+
+        <div class="card">
+            <h3>💧 Water Cycle</h3>
+            <p>Trees play a crucial role in the water cycle by absorbing rainwater, reducing
+                runoff, preventing erosion, and releasing water vapor through transpiration.</p>
+        </div>
+
+        <div class="card">
+            <h3>🦋 Biodiversity</h3>
+            <p>Forests are home to 80% of terrestrial biodiversity. They provide habitat,
+                food, and shelter for countless species of plants, animals, and microorganisms.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌡️ Climate Regulation</h3>
+            <p>Forests help regulate global climate by storing carbon, moderating temperatures,
+                and influencing precipitation patterns across different regions.</p>
+        </div>
+
+        <div class="card">
+            <h3>🏞️ Natural Resources</h3>
+            <p>Forests provide essential resources including timber, medicinal plants, food,
+                and materials while supporting the livelihoods of millions of people worldwide.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧘 Human Wellbeing</h3>
+            <p>Spending time in forests has proven benefits for mental and physical health,
+                reducing stress, improving mood, and promoting overall wellbeing.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

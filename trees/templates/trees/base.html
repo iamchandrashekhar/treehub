@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}TreeHub{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="{% url 'trees:home' %}" class="nav-logo">🌳 TreeHub</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="{% url 'trees:home' %}" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'trees:about' %}" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'trees:tree_types' %}" class="nav-link">Tree Types</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'trees:forest_facts' %}" class="nav-link">Forest Facts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'trees:tree_care' %}" class="nav-link">Tree Care</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; {% now "Y" %} TreeHub. Nurturing nature, one tree at a time. 🌿</p>
+        </div>
+    </footer>
+</body>
+
+</html>

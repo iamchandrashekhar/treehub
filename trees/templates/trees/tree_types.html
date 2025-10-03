@@ -1,0 +1,52 @@
+{% extends 'trees/base.html' %}
+
+{% block title %}{{ title }} - TreeHub{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Tree Types</h1>
+    <p>Explore the diverse world of trees and their unique characteristics</p>
+</div>
+
+<section class="tree-types-content">
+    {% for category in tree_types %}
+    <div class="tree-category">
+        <h3>{{ category.category }}</h3>
+        <p>{{ category.description }}</p>
+        <div class="tree-examples">
+            {% for example in category.examples %}
+            <span class="tree-tag">{{ example }}</span>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</section>
+
+<section class="additional-info">
+    <div class="card-grid">
+        <div class="card">
+            <h3>🌿 Tree Identification</h3>
+            <p>Trees can be identified by their leaves, bark, shape, and growth patterns.
+                Each species has unique characteristics that help distinguish it from others.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌍 Geographic Distribution</h3>
+            <p>Different tree species thrive in different climates and regions. Understanding
+                their natural habitats helps in conservation and cultivation efforts.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌱 Growth Patterns</h3>
+            <p>Trees have varying growth rates, mature sizes, and lifespans. Some species
+                grow quickly but live shorter lives, while others grow slowly but can live for centuries.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌳 Ecological Roles</h3>
+            <p>Each tree type plays specific roles in their ecosystems, from providing food
+                and shelter for wildlife to improving soil quality and air purification.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
