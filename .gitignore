@@ -39,7 +39,6 @@ venv.bak/
 
 # Static files
 staticfiles/
-/static/
 /media/
 
 # IDE
