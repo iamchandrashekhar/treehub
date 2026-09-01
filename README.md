@@ -1,20 +1,20 @@
-# 🌳 TreeHub - Django Tree Information Portal
+#  TreeHub - Django Tree Information Portal
 
 A comprehensive Django-based web application dedicated to tree education, forest conservation awareness, and practical tree care guidance. TreeHub serves as an educational platform providing valuable resources about tree species, forest ecosystems, and environmental stewardship.
 
-## 🌟 Features
+##  Features
 
-- **🏠 Home Page** - Welcome interface with featured trees and comprehensive site overview
-- **ℹ️ About Section** - Mission statement, values, and TreeHub's commitment to environmental conservation
-- **🌲 Tree Types** - Detailed guide covering tree categories and identification (Deciduous, Evergreen, Fruit Trees, Flowering Trees)
-- **🌍 Forest Facts** - Educational content about forest ecosystems, biodiversity, and environmental impact
-- **🌱 Tree Care** - Comprehensive guidance for tree planting, maintenance, pruning, and seasonal care
-- **📱 Responsive Design** - Mobile-first design that works seamlessly across all devices
-- **🎨 Nature-Inspired UI** - Clean, minimal interface with earth-tone colors and intuitive navigation
-- **🐳 Docker Ready** - Complete containerization for easy deployment and development
-- **⚡ Static Content** - No database dependencies for simplicity
+- ** Home Page** - Welcome interface with featured trees and comprehensive site overview
+- ** About Section** - Mission statement, values, and TreeHub's commitment to environmental conservation
+- ** Tree Types** - Detailed guide covering tree categories and identification (Deciduous, Evergreen, Fruit Trees, Flowering Trees)
+- ** Forest Facts** - Educational content about forest ecosystems, biodiversity, and environmental impact
+- ** Tree Care** - Comprehensive guidance for tree planting, maintenance, pruning, and seasonal care
+- ** Responsive Design** - Mobile-first design that works seamlessly across all devices
+- ** Nature-Inspired UI** - Clean, minimal interface with earth-tone colors and intuitive navigation
+- ** Docker Ready** - Complete containerization for easy deployment and development
+- ** Static Content** - No database dependencies for simplicity
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -75,7 +75,7 @@ After starting the server, you should see:
 - All 5 main sections accessible through the navigation menu
 - Responsive design working on different screen sizes
 
-## 🔧 Configuration
+##  Configuration
 
 ### Environment Variables
 
@@ -110,7 +110,7 @@ For production deployment, make sure to:
 4. **Configure static file serving**
 5. **Ensure SQLite database is properly backed up**
 
-## 🐳 Docker Deployment
+##  Docker Deployment
 
 TreeHub includes complete Docker support for both development and production environments.
 
@@ -174,7 +174,7 @@ TreeHub includes complete Docker support for both development and production env
    docker run -p 8000:8000 treehub:dev
    ```
 
-## 🏭 Production Deployment
+##  Production Deployment
 
 ### Using Gunicorn
 
@@ -238,18 +238,18 @@ ALLOWED_HOSTS=yourdomain.com,www.yourdomain.com
 STATIC_ROOT=/var/www/treehub/static/
 ```
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ### Why Trees Matter
 Trees are essential for:
-- 🌍 **Climate regulation** - absorbing CO2 and producing oxygen
-- 🏠 **Wildlife habitats** - supporting biodiversity
-- 🌊 **Water cycle** - preventing erosion and filtering water
-- 💚 **Human well-being** - providing shade, beauty, and peace
+-  **Climate regulation** - absorbing CO2 and producing oxygen
+-  **Wildlife habitats** - supporting biodiversity
+-  **Water cycle** - preventing erosion and filtering water
+-  **Human well-being** - providing shade, beauty, and peace
 
 
 ---
 
-**Happy Tree Planting! 🌱**
+**Happy Tree Planting! **
